@@ -1,0 +1,257 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+h2{
+    font-size: 28px;
+    color: #ef008e;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 20px;
+    margin-top:50px;
+    margin-bottom:10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.page-navigation-items{
+    margin-bottom: 50px;
+}
+
+
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+    text-align: right;
+}
+
+
+.content-section {
+    min-height: 100vh;
+}
+
+.band-members{
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #ccc8ff;
+    font-weight: bold;   
+}
+a{
+    color: #ef008e;
+    opacity: 0.8;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 6.7px;
+}
+.page-navigation{
+    display: block;
+    margin-bottom: 50px;
+}
+.page-navigation__items{
+    margin-top: 10px;
+}
+.img-section__about{
+    z-index:0;
+    border-top:solid;
+    border-top-color: #ef008e; 
+}
+.about-section__desc{
+    position: relative;
+    left: 115px;
+    bottom: 270px;
+    z-index: 1;
+    width: 400px;
+    height: 350px;
+    background-color: #25072e;
+    text-align: left;
+    color: #dbd8fb;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 40px 55px 40px 55px;
+    border-bottom: solid;
+    border-bottom-color: #ef008e;
+}
+.about-section__desc-details{
+    color: #dbd8fb;
+    opacity: 0.4;
+}
+iframe{
+    margin-top:50px;
+    width: 1150px;
+    height:650px;
+    border-top:solid;
+    border-top-color:  #ef008e;
+}
+.gallery{
+    padding-left: 70px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.gallery__image{
+    width: 350px;
+    height: 230px;
+    border-top:solid;
+    border-top-color:#ef008e; 
+        
+}
+.concerts__image{
+    border-bottom:solid;
+    border-bottom-color:#ef008e;
+    margin:0;
+}
+.concerts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 5fr;
+    
+}
+.concerts__info{
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-rows: repeat(2,1fr);
+    justify-items: start;
+    align-items: start;
+}
+.concerts__info p{
+    grid-column: 2/4;
+    
+}
+.button__concerts{
+    grid-column: 4;
+    grid-row: 2/4;
+    height: 25px;
+    background-color: rgba(204,200,255,0.1);
+    border-radius: 8px;
+    padding: 2px 10px 2px 10px;
+    border: none;
+}
+.button__concerts{
+    color: rgba(204,200,255,0.5);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:12px;
+}
+.concerts__image{
+    width: 350px;
+    height: 230px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.concerts__date{
+    color: #ccc8ff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.concerts__location{
+    color: #ccc8ff;
+    font-size: 13px;
+    opacity: 0.1;
+}
+.gallery__contact{
+    position: relative;
+    right: 500px;
+    z-index: 0;
+}
+address{
+    position: relative;
+    z-index: 1;
+    bottom: 150px;
+    font-weight: bold;
+    font-family:sans-serif;
+    color: #ccc8ff;
+}
+.form__field{
+    display:grid;
+    grid-template-columns: repeat(12,auto);
+    grid-template-rows: minmax(50px,auto);
+    grid-row-gap: 5px;
+    position: relative;
+    right: 650px;
+   
+}
+.form__label{
+    grid-column: 12/12;
+    grid-row: 1/4;
+    text-align: left;
+    padding-top: 30px;
+    color: #ccc8ff;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    opacity:0.5;
+}
+.form__input{
+    grid-column: 12/12;
+    grid-row: 2/4;
+     background-color: #ccc8ff;
+    opacity: 0.1;
+}
+.button__contact{
+    grid-column:11/12;
+    grid-row:3/4;
+    margin-left: 120px;
+    border-radius: 4px;
+    border:none;
+    background-color: rgba(204,200,255,0.1);
+}
+.button__contact{
+    height: auto;
+    color: rgba(219,216,251,1);
+    font-family: sans-serif;
+    font-size: 12px;
+}
